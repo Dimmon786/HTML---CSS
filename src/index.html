@@ -1,49 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+
 <head>
-<link rel="stylesheet" href="mystyle.css">
-<h1>evosys</h1>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evosys</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <h1>EvoSys AG</h1>
-    <table>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Age</th>
-        </tr>
-        <tr>
-            <td>Jill</td>
-            <td>Smith</td>
-            <td>50</td>
-        </tr>
-        <tr>
-            <td>Eve</td>
-            <td>Jackson</td>
-            <td>94</td>
-        </tr>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>80</td>
-        </tr>
-    </table>
-    <h3>SIDEBAR</h3>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#news">Products</a></li>
-      </ul>
-    <h3>SECTION</h3>
-    <h3>Article - My Title 1</h3>
-    <p>Lorem ipsum</p>
-    <h3>Article - My Title 2</h3>
-    <p>Lorem ipsum</p>
-    <h3>Article - My Title 3</h3>
-    <p>Lorem ipsum</p>
+
+<body class="flex flex-col min-h-screen">
+
+    <div>
+        <main>
+            <div>
+
+            </div>
+
+            <header>
+                <h2>
+                    EvoSys AG
+                </h2>
+            </header>
+            <div class="content-start"><!-- nav -->
+                <nav class="p-2 ">
+                    <div>
+                        <h1>SIDEBAR</h1>
+                    </div>
+                    <ul>
+                        <li>
+                            <a Href="home">
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a Href="aboutUs">
+                                <span>About Us</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a Href="products">
+                                <span>Products</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div><!-- end nav-->
+
+            <div class="px-16 h-40 grid grid-cols-3 gap-4 content-evenly"> <!--- begin table-->
+                <table>
+                    <thead>TABLE</thead>
+                    <tr class="text-2xl">
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                    </tr>
+                    <tr>
+                        <td>Jill</td>
+                        <td>Smith</td>
+                        <td>50</td>
+                    </tr>
+                    <tr>
+                        <td>Eve</td>
+                        <td>Jackson</td>
+                        <td>94</td>
+                    </tr>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>80</td>
+                    </tr>
+                </table>
+            </div><!---end table-->
+
+            <div class="px-10 py-16"><!---begin inhalt-->
+                <h3>SECTION</h3>
+                <div>
+                    <h3>Article - My Title 1</h3>
+                    <p>Lorem ipsum</p>
+                    <h3>Article - My Title 2</h3>
+                    <p>Lorem ipsum</p>
+                    <h3>Article - My Title 3</h3>
+                    <p>Lorem ipsum</p>
+                </div>
+            </div><!---end inhalt-->
+
+        </main>
+
+    </div>
 
 </body>
-<footer>
-<p>FOOTER - Copyright - EvoSys AG</p>
+<footer class="mt-auto content-center">
+    <p>FOOTER - Copyright - EvoSys AG</p>
 </footer>
+
 </html>
